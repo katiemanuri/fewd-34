@@ -76,13 +76,12 @@ input{
   display: inline-block;
   margin-left: 10px;
 
-
-
 }
 
-p.nth-child(1){
-  box-shadow: green;
-}
+
+
+
+
 
 hr{
   width: 65%;
@@ -98,9 +97,23 @@ footer{
   margin-top: 5%;
 }
 
+input:focus {
+    outline: #ffc4cc !important;
+    border:1px solid #ffc4cc;
+    box-shadow: 0 0 20px #cbfef3;
+
+}
+
+.sign-up {
+border-color: grey !important;
+  background-color: white;
+  width: 70px;
+  box-shadow: 0 0 10px #c4c4c4;
+}
 
 </style>
 </head>
+
 <html>
 
 
@@ -134,7 +147,7 @@ alt="ACME logo" />
       <p><h3><strong>Sign Up</P></h3></Strong>
       <form action="http://acme.com/signup.php">
         <p>First Name:
-          <input type="text" name="first name" size="20" maxlength="30" value="John" />
+          <input type="text" name="first name" size="20" maxlength="30" value="John"/>
         <p>Last Name:
             <input type="text" name="Last name" size="20" maxlength="30" value= "Doe"/>
         <p>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -144,8 +157,11 @@ alt="ACME logo" />
            <br></br>
              <input type="checkbox" name="Agree to our terms of service" <p>Agree to our terms of service
            <br></br>
-            <input type="submit" value="Sign Up" />
-      </p>
+
+         </form>
+
+            <input class="sign-up" type="submit" value="Sign Up" />
+
 
     </main>
 
