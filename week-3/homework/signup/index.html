@@ -100,6 +100,13 @@ footer{
   margin-top: 5%;
 }
 
+input:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: green
+}
+
 input:focus {
     outline: #ffc4cc !important;
     border:1px solid #ffc4cc;
@@ -150,13 +157,13 @@ alt="ACME logo" />
       <p><h3><strong>Sign Up</P></h3></Strong>
       <form action="http://acme.com/signup.php">
         <p>First Name:
-          <input type="text" name="first name" size="20" maxlength="30" placeholder="John"/>
+          <input type="text" name="first name" size="20" maxlength="30" placeholder="John" required/>
         <p>Last Name:
-            <input type="text" name="Last name" size="20" maxlength="30" placeholder= "Doe"/>
+            <input type="text" name="Last name" size="20" maxlength="30" placeholder= "Doe" required/>
         <p>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <input type="text" name="Email" size="20" maxlength="30" placeholder= "john.doe@example.com" />
+           <input type="text" name="Email" size="20" maxlength="30" placeholder= "john.doe@example.com" required />
         <p>Password:&nbsp;&nbsp;
-             <input type="password" name="password" size="20" maxlength="30" placeholder"password"/>
+             <input type="password" name="password" size="20" maxlength="30" placeholder"password" required/>
            <br></br>
              <input type="checkbox" name="Agree to our terms of service" <p>Agree to our terms of service
            <br></br>
