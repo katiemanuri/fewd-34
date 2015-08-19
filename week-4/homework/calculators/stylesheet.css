@@ -2,12 +2,23 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial;
+  background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2015/08/372b23f5310b8d0446e64eef71d38fdf-1400x2100.jpg');
+  background-repeat: no-repeat;
+  font-family: 'Marvel' , sans-serif;
   font-size: 20px;
   line-height: 30px;
+  color: grey;
+
 }
 h1 {
-  font-size: 20px;
+  font-size: 30px;
+  background-color: white;
+  line-height: 40px;
+  width:400px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
 }
 input {
   font-size: inherit;
@@ -15,6 +26,8 @@ input {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  opacity: 0.6;
+
 }
 input[disabled] {
   border: 0;
@@ -23,31 +36,34 @@ input[disabled] {
   margin-bottom: 100px;
 }
 .py {
-  background-image: url('http://cloud.avandamiri.com/image/0l0a39261I29/triangle.png');
-  background-size: 400px 260px;
+  background-image: url('http://plainicon.com/dl.php?pid=46235&tem=512px&con=download-icon');
+  background-size: 300px 160px;
   background-repeat: no-repeat;
   background-position: top center;
   height: 300px;
   width: 600px;
   position: relative;
+
+
 }
 .py input {
   width: 50px;
+  font-family: 'Marvel' , sans-serif;
 }
 .py-a {
   position: absolute;
-  top: 130px;
-  left: 60px;
+  top: 70px;
+  left: 85px;
 }
 .py-b {
   position: absolute;
-  top: 240px;
+  top: 160px;
   left: 250px;
 }
 .py-c {
   position: absolute;
   left: 300px;
-  top: 80px;
+  top: 30px;
 }
 .circum {
   position: relative;
@@ -58,25 +74,29 @@ input[disabled] {
   width: 200px;
   border-radius: 50%;
   border: 5px solid black;
+  opacity: 0.6;
   position: absolute;
-  left: 150px;
+  left: 100px;
 }
 .circum-r {
   position: absolute;
   top: 85px;
-  left: 250px;
+  left: 200px;
   width: 80px;
+  font-family: 'Marvel' , sans-serif;
 }
 .circum-c {
   position: absolute;
   top: 85px;
-  left: 360px;
+  left: 320px;
   width: 140px;
+  font-family: 'Marvel' , sans-serif;
 }
 .temp-f,
 .temp-c {
-  width: 80px;
+  width: 70px;
+
 }
 .temp {
-  padding-left: 150px;
+  padding-left: 110px;
 }
