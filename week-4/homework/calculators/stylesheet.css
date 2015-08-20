@@ -11,7 +11,7 @@ header {
   top: 0;
   left: 0;
   margin-bottom: 20px;
-  border-bottom: 5px solid #604345;
+  border-bottom: 7px solid #604345;
 
 }
 
@@ -68,7 +68,7 @@ input {
   font-size: inherit;
   line-height: inherit;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid grey;
   border-radius: 5px;
 
 
@@ -148,6 +148,8 @@ input[disabled] {
 .temp-f,
 .temp-c {
   width: 70px;
+  border-color: #ccc;
+
 
 }
 .panel-temp {
