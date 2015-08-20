@@ -1,13 +1,55 @@
 * {
   box-sizing: border-box;
+
 }
-body {
-  background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2014/06/14185401130_8760c850f2_o-1400x933.jpg');
+
+header {
+  background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2015/07/179H1-1400x933.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  height:500px;
+  top: 0;
+  left: 0;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #604345;
+
+}
+
+p {
+    opacity: .6;
+}
+
+.homepage-icon {
+  margin-top: 0;
+padding-top: 200px;
+text-align:center;
+opacity: .5;
+
+
+}
+.thermo-icon{
+  margin-left: 46%;
+  opacity: .8;
+}
+.pro-icon{
+margin-left:47%;
+
+}
+.measure-icon {
+  margin-left:46%;
+  height:125px;
+  opacity: .8;
+
+
+}
+
+body {
   font-family: 'Marvel' , sans-serif;
   font-size: 20px;
   line-height: 30px;
-  color: grey;
+  color: #604345;
+  margin:0;
+
 
 }
 h1 {
@@ -18,7 +60,9 @@ h1 {
   border-radius: 5px;
   text-align: center;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #604345;
+  margin: auto;
+  margin-top:20px;
 }
 input {
   font-size: inherit;
@@ -26,14 +70,20 @@ input {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  opacity: 0.6;
+
 
 }
 input[disabled] {
   border: 0;
 }
 .panel {
-  margin-bottom: 100px;
+  opacity: .4;
+  text-align:center;
+  margin-top: 55px;
+}
+
+.panel.py{
+  margin-left: 30%;
 }
 .py {
   background-image: url('http://plainicon.com/dl.php?pid=46235&tem=512px&con=download-icon');
@@ -42,7 +92,7 @@ input[disabled] {
   background-position: top center;
   height: 300px;
   width: 600px;
-  position: relative;
+  position: absolute;
 
 
 }
@@ -65,29 +115,32 @@ input[disabled] {
   left: 300px;
   top: 30px;
 }
-.circum {
+.panel.circum {
   position: relative;
   height: 200px;
+  margin-left: 32%;
+  margin-bottom: 120px;
 }
 .circle {
   height: 200px;
   width: 200px;
   border-radius: 50%;
   border: 5px solid black;
-  opacity: 0.6;
+  opacity: 0.8;
   position: absolute;
   left: 100px;
 }
+
 .circum-r {
   position: absolute;
-  top: 85px;
+  top: 100px;
   left: 200px;
   width: 80px;
   font-family: 'Marvel' , sans-serif;
 }
 .circum-c {
   position: absolute;
-  top: 85px;
+  top: 100px;
   left: 320px;
   width: 140px;
   font-family: 'Marvel' , sans-serif;
@@ -97,6 +150,8 @@ input[disabled] {
   width: 70px;
 
 }
-.temp {
-  padding-left: 110px;
+.panel-temp {
+  margin-left:45%;
+  padding-bottom: 60px;
+  padding-top: 40px;
 }
