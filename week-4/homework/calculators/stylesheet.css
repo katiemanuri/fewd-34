@@ -77,7 +77,7 @@ input[disabled] {
   border: 0;
 }
 .panel {
-  opacity: .4;
+  opacity: .5;
   text-align:center;
   margin-top: 55px;
 }
@@ -104,6 +104,7 @@ input[disabled] {
   position: absolute;
   top: 70px;
   left: 85px;
+
 }
 .py-b {
   position: absolute;
