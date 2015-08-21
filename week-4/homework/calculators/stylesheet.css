@@ -14,6 +14,10 @@ header {
   border-bottom: 7px solid #604345;
 
 }
+.header{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 p {
     opacity: .6;
@@ -21,7 +25,6 @@ p {
 
 .homepage-icon {
 margin-top: 0;
-padding-top: 200px;
 text-align:center;
 opacity: .4;
 
