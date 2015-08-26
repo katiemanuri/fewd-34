@@ -24,7 +24,7 @@ body { font-family: sans-serif; }
 
   <script>
     function addListItem() {
-      var text=prompt("what the what?");
+      var text=prompt("what do you need?");
       var list= document.querySelector("#todo-list");
       var item= document.createElement ("li");
 
@@ -32,12 +32,7 @@ body { font-family: sans-serif; }
       item.textContent=text;
         list.appendChild(item);
 
-
 }
-
-
-
-
 
 
   </script>
@@ -56,10 +51,21 @@ body { font-family: sans-serif; }
   </p>
 
   <div id="image">
+
   </div>
 
   <script>
   function addImage() {
+    var x=prompt("height?");
+    var y=prompt("width?");
+    var imagePath=prompt("image to add?");
+    var set= document.querySelector("#image");
+    var image = document.createElement ("img");
+    image.setAttribute ("height", x);
+    image.setAttribute ("width", y);
+    image.setAttribute ("src", imagePath);
+
+    set.appendChild(image);
 
   }
   </script>
@@ -80,7 +86,10 @@ body { font-family: sans-serif; }
 
   <script>
   function makeBold() {
-    // Your code goes here.
+  var p=document.querySelector('#make-me-Bold');
+  var button=document.querySelector('button');
+  button.addEventListener ("click", makeBold);
+  p.classList.toggle ("bold");
   }
   </script>
 </div>
