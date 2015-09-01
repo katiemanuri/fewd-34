@@ -16,18 +16,17 @@ body { font-family: sans-serif; }
 
   <p>
     <button onclick="addListItem()">+ Add item</button>
-  </p>
+
 
   <ol id="todo-list">
     <li>Pick up dry cleaning</li>
   </ol>
-
+</p>
   <script>
     function addListItem() {
       var text=prompt("what do you need?");
       var list= document.querySelector("#todo-list");
       var item= document.createElement ("li");
-
 
       item.textContent=text;
         list.appendChild(item);

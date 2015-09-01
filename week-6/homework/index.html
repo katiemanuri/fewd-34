@@ -1,0 +1,231 @@
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #efeff1;
+  font: 14px 'Open Sans', sans-serif;
+  color: #7c818b;
+  line-height: 20px;
+}
+#like {
+  border-color: none !important;
+  cursor: pointer;
+    line-height: 14px;
+    font: 14px 'Open Sans', sans-serif;
+    max-width: 300px;
+
+}
+
+
+#image > span {
+  border: 2px solid white;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  float: right;
+  margin: 20px;
+  font-size: 20px;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+#image > span:hover {
+  opacity: 1;
+}
+
+#image > span.liked {
+  box-shadow: 0 0 10px red, inset 0 0 10px red;
+  text-shadow: 0 0 10px red;
+  opacity: 1;
+}
+#likedis{
+  font: 12px 'Open Sans', sans-serif;
+  border: none;
+  color:#9c5597;
+  border-radius: 5px;
+  cursor:pointer;
+background: #efeff1;
+}
+#number {
+width: 20px;
+background-color: transparent;
+  font: 12px 'Open Sans', sans-serif;
+  border: none;
+  color:#9c5597;
+}
+
+.button {
+  display:inline;
+  line-height:12px;
+  font: 12px 'Open Sans', sans-serif;
+  background: #efeff1;
+  color: #9c5597;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: white;
+  
+
+}
+ul {list-style-type: none;
+}
+
+ul li::before {
+    content: "\2665";
+    color: #9c5597;
+}
+
+.widget {
+  width: 300px;
+  margin: 20px auto;
+  background: #ffffff;
+  border: 1px solid #d5d5da;
+  -moz-box-shadow: 0 0 2px 0 rgba(213, 213, 218, 0.8);
+  -webkit-box-shadow: 0 0 2px 0 rgba(213, 213, 218, 0.8);
+  box-shadow: 0 0 2px 0 rgba(213, 213, 218, 0.8);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.widget header {
+  padding: 30px;
+background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2014/06/14193549030_c0fc9e07ca_o-1400x1400.jpg');
+";
+background-size: 50% 50%;
+overflow: hidden;
+}
+.widget header h1 {
+  font-size: 1.5em;
+  color: #353941;
+  font-weight: 300;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+article {
+  border-bottom: 1px solid #e6e6eb;
+}
+article h2 {
+  position: relative;
+  height: 42px;
+  padding: 10px 30px;
+  border-top: 1px solid #e6e6eb;
+  border-bottom: 1px solid #e6e6eb;
+}
+article h2 strong {
+  color: #A24FB3;
+  font-weight: bold;
+}
+article h2:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -1px;
+  width: 10px;
+  height: 42px;
+  background: #A24FB3;
+}
+article p {
+  padding: 20px 30px;
+  background: #47474C;
+  Color: white;
+}
+
+#input {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e6e6eb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+#input h3 {
+  color: #1a1c1e;
+  font-weight: bold;
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<html>
+<div class="widget">
+
+  <header>
+    <div id="container">
+    <h1>Newest Post</h1>
+    <form id="like">
+     <input id="number"type="text" value=""/>
+    <input id="likedis" type="button" onclick="incrementValue()" value= "like me" />
+
+    </form>
+  </header>
+
+  <article>
+    <h2>Recipe: <strong>Hipster Soup</strong></h2>
+    <p>Brunch kale chips 8-bit Shoreditch Intelligentsia. Neutra drinking vinegar
+      photo booth wayfarers bicycle rights. Pitchfork taxidermy chambray, distillery
+      lumbersexual normcore fixie raw denim. IPhone cornhole Blue Bottle Neutra
+      pour-over master cleanse. </p>
+  </article>
+
+  <section>
+    <ul class="startoflist">
+        <li>YASSS!</li>
+      </ul>
+      <input id="input" class="text" type="text" placeholder="Add a comment...">
+<button class="button">got somethin' to say? </button>
+
+</section>
+
+
+  <script>
+var entertask=document.querySelector('.button')
+entertask.addEventListener('click',addListItem);
+
+    function addListItem() {
+      var katie=document.querySelector('.startoflist');
+      var item= document.createElement ("li");
+      var text=document.querySelector ('.text').value;
+
+
+
+item.textContent=text;
+  katie.appendChild(item);
+}
+
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}
+
+
+</script>
+
+
+
+</html>
