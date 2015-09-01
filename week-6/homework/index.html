@@ -14,8 +14,6 @@ body {
 }
 
 
-}
-
 
 #image > span {
   border: 2px solid white;
@@ -60,25 +58,28 @@ color:#9c5597;
 }
 
 .button {
-  display:inline;
-  line-height:12px;
   font: 12px 'Open Sans', sans-serif;
-  background: #efeff1;
-  color: #9c5597;
-  margin-right: auto;
-  margin-left: auto;
+  border: none;
+  color:#9c5597;
   border-radius: 5px;
-  cursor: pointer;
-  border-color: white;
+  cursor:pointer;
+  background: #efeff1;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  }
+
 
 
 }
+
 ul {list-style-type: none;
 }
 
 ul li::before {
     content: "\2665";
     color: #9c5597;
+    padding-right: 5px;
 }
 
 .widget {
@@ -94,7 +95,7 @@ ul li::before {
   border-radius: 5px;
 }
 .widget header {
-  padding: 30px;
+  padding: 20px;
 background-image: url('http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr02/15/12/enhanced-buzz-29382-1381854334-0.jpg');
 ";
 background-size: 50% 50%;
@@ -104,9 +105,8 @@ background-repeat: no-repeat;
 .widget header h1 {
   font-size: 1.5em;
   color: #353941;
-  font-weight: 300;
-  display: inline-block;
-  margin-top: 15px;
+  margin-top: 0px;
+  font-weight: bold;
 }
 
 article {
@@ -116,8 +116,6 @@ article h2 {
   position: relative;
   height: 42px;
   padding: 10px 30px;
-  border-top: 1px solid #e6e6eb;
-  border-bottom: 1px solid #e6e6eb;
 }
 article h2 strong {
   color: #A24FB3;
@@ -129,7 +127,7 @@ article h2:after {
   left: -10px;
   top: -1px;
   width: 10px;
-  height: 42px;
+  height: 50px;
   background: #A24FB3;
 }
 article p {
@@ -150,9 +148,13 @@ article p {
   padding-left: 20px;
   font-size: 14px;
 }
-#input h3 {
+
+h3 {
+  margin-top: 0px;
+  margin-right:20px;
   color: #1a1c1e;
-  font-weight: bold;
+  opacity: .8;
+
 }
 
 
@@ -196,7 +198,7 @@ article p {
         <li>YASSS!</li>
     </ul>
       <input id="input" class="text" type="text" placeholder="Add a comment...">
-      <button class="button">got somethin' to say? </button>
+      <button class="button">submit</button>
   </section>
 
 
