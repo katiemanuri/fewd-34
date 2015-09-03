@@ -26,7 +26,7 @@ width: 20px;
 background-color: transparent;
 font: 12px 'Open Sans', sans-serif;
 border: none;
-color:#9c5597;
+color:white;
 
 }
 
@@ -124,7 +124,6 @@ h3 {
   margin-top: 0px;
   margin-right:20px;
   color: white;
-  opacity: .8;
 
 }
 </style>
@@ -151,7 +150,7 @@ h3 {
   </header>
 
   <article>
-    <h2>About: <strong>Hipster things</strong></h2>
+    <h2>About: <strong>Hipsterisms</strong></h2>
     <p>Brunch kale chips 8-bit Shoreditch Intelligentsia. Neutra drinking vinegar
       photo booth wayfarers bicycle rights. Pitchfork taxidermy chambray, distillery
       lumbersexual normcore fixie raw denim. IPhone cornhole Blue Bottle Neutra
@@ -165,7 +164,7 @@ h3 {
       <input id="input" class="text" type="text" placeholder="Add a comment...">
       <button class="button">submit</button>
   </section>
-
+</html>
 
   <script>
 var entertask=document.querySelector('.button')
@@ -175,8 +174,6 @@ entertask.addEventListener('click',addListItem);
       var katie=document.querySelector('.startoflist');
       var item= document.createElement ("li");
       var text=document.querySelector ('.text').value;
-
-
 
 item.textContent=text;
   katie.appendChild(item);
@@ -190,9 +187,8 @@ function incrementValue()
     value++;
     document.getElementById('number').value = value++;
 thingsToSay.value="";
+
 }
 
 
 </script>
-
-</html>
