@@ -11,34 +11,7 @@ body {
   font: 14px 'Open Sans', sans-serif;
   color: #7c818b;
   line-height: 20px;
-}
 
-
-
-#image > span {
-  border: 2px solid white;
-  border-radius: 100px;
-  width: 40px;
-  height: 40px;
-  display: block;
-  line-height: 40px;
-  text-align: center;
-  color: white;
-  float: right;
-  margin: 20px;
-  font-size: 20px;
-  opacity: 0.7;
-  transition: all 0.3s;
-}
-
-#image > span:hover {
-  opacity: 1;
-}
-
-#image > span.liked {
-  box-shadow: 0 0 10px red, inset 0 0 10px red;
-  text-shadow: 0 0 10px red;
-  opacity: 1;
 }
 #likedis{
 font: 12px 'Open Sans', sans-serif;
@@ -94,7 +67,7 @@ ul li::before {
 }
 .widget header {
   padding: 20px;
-background-image: url('http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr02/15/12/enhanced-buzz-29382-1381854334-0.jpg');
+background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2015/08/16757790872_0a48463abf_o-1400x789.jpg');
 ";
 background-size: 50% 50%;
 overflow: hidden;
@@ -102,7 +75,7 @@ background-repeat: no-repeat;
 }
 .widget header h1 {
   font-size: 1.5em;
-  color: #353941;
+  color: white;
   margin-top: 0px;
   font-weight: bold;
 }
@@ -150,16 +123,10 @@ article p {
 h3 {
   margin-top: 0px;
   margin-right:20px;
-  color: #1a1c1e;
+  color: white;
   opacity: .8;
 
 }
-
-
-
-
-
-
 </style>
 
 <html>
@@ -174,7 +141,7 @@ h3 {
   <header>
     <div id="container">
     <h1>Newest Post</h1>
-      <h3> Featuring Jake Gyllenhaal's man bun</h3>
+      <h3> Light leaks and things</h3>
 
     <form id="like">
       <input id="number"type="text" value=""/>
@@ -217,12 +184,15 @@ item.textContent=text;
 
 function incrementValue()
 {
-    var value = parseInt(document.getElementById('number').value, 10);
+    var thingsToSay = document.querySelector('#input')
+    var value = parseInt(document.getElementById('number').value);
     value = isNaN(value) ? 0 : value;
     value++;
-    document.getElementById('number').value = value;
+    document.getElementById('number').value = value++;
+thingsToSay.value="";
 }
 
 
 </script>
+
 </html>
