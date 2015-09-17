@@ -78,16 +78,14 @@ $("#list-movies").on("click",loop);
 
 function putStuffOnScreen(index){
   var li=
-  $("<li>").addClass("list").appendTo("#movies");
+  $("<li>").appendTo("#movies");
   var title =
-  $("<div>").text(movies[index]["title"]).addClass("title").appendTo(".list");
+  $("<div>").text(movies[index]["title"]).addClass("title").appendTo("#movies");
   var releaseDate=
-  $("<div>").text(movies[index]["releaseDate"]).appendTo(".list");
+  $("<div>").text(movies[index]["releaseDate"]).addClass("release").appendTo("#movies");
   var img=
-  $("<img>").attr("src",movies[index]["image"]).appendTo(".list");
+  $("<img>").attr("src",movies[index]["image"]).appendTo("#movies");
   //  if(index="Interstellar")return false;
-  console.log("The index value right now is:" + index);
-  console.log("We have looped through.");
 
 }
 function loop(){
