@@ -18,6 +18,16 @@ header {
 p {
     opacity: .6;
 }
+button {
+  font: 14px 'Open Sans', sans-serif;
+  border: none;
+  color:#9c5597;
+  border-radius: 5px;
+  cursor:pointer;
+  background: #efeff1;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  }
 
 .homepage-icon {
 padding-top: 100px;
@@ -40,106 +50,30 @@ body {
 
 }
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   background-color: white;
   line-height: 40px;
   width:400px;
-  border-radius: 5px;
+  margin: auto;
+  margin-top:20px;
+  margin-bottom: 40px;
+}
+h2{
+  /*border-radius: 5px;*/
   text-align: center;
   padding: 5px;
   border: 1px solid #604345;
+  width:600px;
   margin: auto;
-  margin-top:20px;
+  margin-bottom: 20px;
 }
-input {
-  font-size: inherit;
-  line-height: inherit;
-  padding: 5px;
-  border: 1px solid grey;
-  border-radius: 5px;
-
-
+.featured{
+  height: 550px;
 }
-input[disabled] {
-  border: 0;
+p{
+  margin:auto;
 }
-.panel {
-  text-align:center;
-  margin-top: 55px;
-}
-
-.panel.py{
-  margin-left: 30%;
-}
-.py {
-  background-image: url('http://plainicon.com/dl.php?pid=46235&tem=512px&con=download-icon');
-  background-size: 300px 160px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 300px;
-  width: 600px;
-  position: absolute;
-
-
-}
-.py input {
-  width: 50px;
-  font-family: 'Marvel' , sans-serif;
-}
-.py-a {
-  position: absolute;
-  top: 70px;
-  left: 85px;
-
-}
-.py-b {
-  position: absolute;
-  top: 160px;
-  left: 250px;
-}
-.py-c {
-  position: absolute;
-  left: 300px;
-  top: 30px;
-}
-.panel.circum {
-  position: relative;
-  height: 200px;
-  margin-left: 32%;
-  margin-bottom: 120px;
-}
-.circle {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  border: 5px solid black;
-  opacity: 0.8;
-  position: absolute;
-  left: 100px;
-}
-
-.circum-r {
-  position: absolute;
-  top: 100px;
-  left: 200px;
-  width: 80px;
-  font-family: 'Marvel' , sans-serif;
-}
-.circum-c {
-  position: absolute;
-  top: 100px;
-  left: 320px;
-  width: 140px;
-  font-family: 'Marvel' , sans-serif;
-}
-.temp-f,
-.temp-c {
-  width: 70px;
-  border-color: #ccc;
-
-}
-.panel-temp {
-  margin-left:45%;
-  padding-bottom: 60px;
-  padding-top: 40px;
+.post-copy{
+margin-left: 35%;
+margin-right: 35%;
 }
