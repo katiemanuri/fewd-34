@@ -10,7 +10,7 @@ header {
   height:500px;
   top: 0;
   left: 0;
-//  margin-bottom: 20px;
+  margin-bottom: 100px;
   /*border-bottom: 7px solid #604345;*/
 }
 .header{
@@ -61,7 +61,6 @@ body {
   text-align: center;
 }
 
-
 h2{
   font-weight: lighter;
   /*border-radius: 5px;*/
@@ -104,6 +103,7 @@ p{
 ul {list-style-type: none;
   text-align: left;
   margin-left: 33%;
+
 }
 
 .ingredients::before {
