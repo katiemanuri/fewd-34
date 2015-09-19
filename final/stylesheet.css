@@ -10,7 +10,7 @@ header {
   height:500px;
   top: 0;
   left: 0;
-  margin-bottom: 20px;
+//  margin-bottom: 20px;
   border-bottom: 7px solid #604345;
 
 }
@@ -43,21 +43,23 @@ body {
   font-family: 'Marvel' , sans-serif;
   font-size: 20px;
   line-height: 30px;
-  color: #604345;
+  /*color: #604345;*/
   margin:0;
   text-align: center;
 
 
 }
-h1 {
+.motto {
+  color: white;
   font-size: 50px;
-  background-color: white;
-  line-height: 40px;
-  width:400px;
+  background-color: #604345;
+  line-height: 80px;
   margin: auto;
-  margin-top:20px;
   margin-bottom: 40px;
+  border:1px solid #604345
+
 }
+
 h2{
   /*border-radius: 5px;*/
   text-align: center;
@@ -66,14 +68,58 @@ h2{
   width:600px;
   margin: auto;
   margin-bottom: 20px;
+  margin-top: 30px;
+  color: #604345;
+  padding-left: 20px;
 }
 .featured{
   height: 550px;
 }
+.left-nav{
+  float: left;
+  overflow: auto;
+}
 p{
   margin:auto;
+  color: #604345;
 }
 .post-copy{
 margin-left: 35%;
 margin-right: 35%;
+}
+.drinks{
+  height: 550px;
+}
+.ginger-sour{
+  margin-left: 35%;
+  margin-right: 35%;
+}
+ul {list-style-type: none;
+}
+
+.ingredients::before {
+    content: "\01F378";
+    color: #9c5597;
+    padding-right: 5px;
+}
+button{
+  -webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+0% { -webkit-transform: scale(1); }
+50% { -webkit-transform: scale(1.1); }
+100% { -webkit-transform: scale(1); }
+}
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.1); }
+100% { transform: scale(1); }
+}
+.pulse:hover{
+-webkit-animation-name: pulse;
+animation-name: pulse;
 }
