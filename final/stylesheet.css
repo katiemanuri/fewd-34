@@ -11,7 +11,7 @@ header {
   top: 0;
   left: 0;
 //  margin-bottom: 20px;
-  border-bottom: 7px solid #604345;
+  /*border-bottom: 7px solid #604345;*/
 
 }
 
@@ -38,6 +38,10 @@ width:200px;
 height:350px;
 
 }
+.icon{
+  opacity: .5;
+  width:20px;
+}
 .post-title{
   text-align: center;
 }
@@ -48,6 +52,7 @@ body {
   /*color: #604345;*/
   margin:0;
   text-align: center;
+
 
 
 }
@@ -77,26 +82,29 @@ h2{
 .featured{
   height: 550px;
 }
-.left-nav{
+/*.left-nav{
   float: left;
   overflow: auto;
-}
+}*/
 p{
   margin:auto;
   color: #604345;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
 }
-.post-copy{
-margin-left: 35%;
-margin-right: 35%;
-}
+
 .drinks{
   height: 550px;
 }
 .ginger-sour{
   margin-left: 35%;
   margin-right: 35%;
+  text-align: center;
 }
 ul {list-style-type: none;
+  text-align: left;
+  margin-left: 33%;
 }
 
 .ingredients::before {
