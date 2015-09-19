@@ -21,7 +21,7 @@ p {
 button {
   font: 14px 'Open Sans', sans-serif;
   border: none;
-  color:#9c5597;
+  color:#4b344b;
   border-radius: 5px;
   cursor:pointer;
   background: #efeff1;
@@ -33,7 +33,7 @@ button {
 padding-top: 100px;
 margin-top: 0;
 text-align:center;
-opacity: .4;
+opacity: .5;
 width:200px;
 height:350px;
 
@@ -56,7 +56,7 @@ body {
 
 
 }
-.motto {
+/*.motto {
   color: white;
   font-size: 50px;
   background-color: #604345;
@@ -65,19 +65,20 @@ body {
   margin-bottom: 40px;
   border:1px solid #604345
 
-}
+}*/
 
 h2{
   /*border-radius: 5px;*/
+  color: white;
   text-align: center;
   padding: 5px;
-  border: 1px solid #604345;
+  border: 1px solid #4b344b;
   width:600px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 30px;
-  color: #604345;
   padding-left: 20px;
+  background-color:#4b344b;
 }
 .featured{
   height: 550px;
@@ -88,7 +89,7 @@ h2{
 }*/
 p{
   margin:auto;
-  color: #604345;
+  color: #4b344b;
   text-align: center;
   margin-left: 35%;
   margin-right: 35%;
@@ -109,7 +110,7 @@ ul {list-style-type: none;
 
 .ingredients::before {
     content: "\01F378";
-    color: #9c5597;
+    /*color: #9c5597;*/
     padding-right: 5px;
 }
 button{
