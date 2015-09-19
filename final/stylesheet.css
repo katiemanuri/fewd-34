@@ -29,11 +29,12 @@ button {
   margin-top: 20px;
   }
 
-.homepage-icon {
+.logo {
 padding-top: 100px;
 margin-top: 0;
 text-align:center;
 opacity: .4;
+width:200px;
 
 }
 .post-title{
@@ -42,7 +43,7 @@ opacity: .4;
 body {
   font-family: 'Marvel' , sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  /*line-height: 30px;*/
   /*color: #604345;*/
   margin:0;
   text-align: center;
