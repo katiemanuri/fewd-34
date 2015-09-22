@@ -78,7 +78,7 @@ opacity:.6;
 .post-title{
   text-align: center;
   border-bottom: 1px solid #4b344b;
-  
+
 }
 .wine{
   margin-left: 35%;
@@ -149,4 +149,13 @@ animation-fill-mode: both;
 .pulse:hover{
 -webkit-animation-name: pulse;
 animation-name: pulse;
+}
+
+footer{
+  height:200px;
+  background-color:#4b344b;
+  color: white;
+}
+.contact-icons{
+  color: white !important!
 }

@@ -14,7 +14,14 @@
 
 <header>
      <img class="logo" src=images/logo.png>
-<div class="nav"><i class="fa fa-bars fa-2x"></i></div>
+<div class="nav">
+  <!-- <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul> -->
+<i class="fa fa-bars fa-2x"></i></div>
+
 <div class="search">
   <i class="fa fa-search fa-2x"></i>
   <!-- <form><input type="text" id="query" placeholder="search behance projects"></form> -->
@@ -66,14 +73,18 @@ good food gathers great people</p>
     <img class="icon" src=images/wg-logo-nowords.png>
   <ul class="shots"></ul>
 </article>
+</body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<footer><div class="contact-icons">Contact us<i class="fa fa-instagram-fa-2x"></i><i class="fa fa-dribbble-fa-2x"></i><i class="fa fa-envelope-o-fa-2x"></i></div>
+</footer>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
 <!-- <script src="jribbble.min.js"></script> -->
 <!-- <script src="jquery.min.js"></script> -->
-<script>
-$ "https://api.dribbble.com/v1/user?access_token=8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d"
+<!-- <script> -->
+<!-- $ "https://api.dribbble.com/v1/user?access_token=8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d"
 
 // var token = "8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d";
 var stuff = "shots/everyone"
@@ -82,9 +93,9 @@ var request = "https://api.dribbble.com/" + stuff;
 $.get(request, function(result) {
   var returnedObject = $("<div>").appendTo(result);
   $(".shots").appendTo(returnedObject);
-});
+}); -->
 
- // $.jribbble.shots('teams').then(function(shots) {
+ <!-- // $.jribbble.shots('teams').then(function(shots) {
  //
  // var html = [];
  //
@@ -97,8 +108,6 @@ $.get(request, function(result) {
  //
  //     $('.shots').html(html.join(''));
  //   });
-</script>
+<!-- </script> -->
 
-
-</body>
 </html>
