@@ -13,12 +13,13 @@
   </head>
 
 <header>
+
    <img class="logo" src=images/logo.png>
 <div class="header"><img src=images/header.png></div>
 </header>
 <body>
 <!-- <h1 class="motto">Get inspired : Go create</h1> -->
-
+<ul class="shots"></ul>
     <article class="post">
 <h2 class="post-title">good food gathers great people</h2>
     <p class="post-info"><iframe src="https://player.vimeo.com/video/47559223?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/47559223">raspberry tart</a> from <a href="https://vimeo.com/mrwalker">tiger in a jar</a><i class="fa fa-vimeo"></i></p>
@@ -27,8 +28,8 @@
       <img class="icon" src=images/wg-logo-nowords.png>
 <h2>featured product</h2>
     <img class="featured" src="http://cdn.shopify.com/s/files/1/0164/4368/products/be_wine_loose_tee_1024x1024.jpg?v=1414594602">
-    <p class = "post-copy">Life, a shirt imploring its viewer to "be wine". If only we could magically transform humans into alcohol.</p>
-    <button href="http://stayhomeclub.com/collections/women/products/be-wine-loose-tee" target="_blank" class="pulse">buy me here</button>
+    <p class = "wine">Life, a shirt imploring its viewer to "be wine". If only we could magically transform humans into alcohol.</p>
+    <a href="http://stayhomeclub.com/collections/women/products/be-wine-loose-tee"><button target="_blank" class="pulse">buy me here</button></a>
     <br></br>
     <img class="icon" src=images/wg-logo-nowords.png>
 <h2>be inspired by kinfolk</h2>
@@ -37,9 +38,9 @@
     <img class="icon" src=images/wg-logo-nowords.png>
 <div><img class="artist"src=images/arcs.png></div>
 <!-- <h2 class="featured-artist">Featured Artist</h2> -->
-<<iframe src="https://player.vimeo.com/video/139601423" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/139601423">The Arcs - Outta My Mind</a> from<a href="https://vimeo.com">Vimeo</a><i class="fa fa-vimeo"></i></p>
+<iframe src="https://player.vimeo.com/video/139601423" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/139601423">The Arcs - Outta My Mind</a> from<a href="https://vimeo.com">Vimeo</a><i class="fa fa-vimeo"></i></p>
     <br></br>
-    <p>Yours, Dreamily, is the debut album by The Arcs, a side-project by Dan Auerbach of The Black Keys. The album originated as an Auerbach solo project but morphed into a collaborative effort, with musicians Leon Michels, Richard Swift, Homer Steinweiss, and Nick Movshon. All members of the band share songwriting credit for the album.</p>
+    <p class="arcs">Yours, Dreamily, is the debut album by The Arcs, a side-project by Dan Auerbach of The Black Keys. The album originated as an Auerbach solo project but morphed into a collaborative effort, with musicians Leon Michels, Richard Swift, Homer Steinweiss, and Nick Movshon. All members of the band share songwriting credit for the album.</p>
     <br></br>
     <img class="icon" src=images/wg-logo-nowords.png>
 <h2 class="food-post">get your drink on</h2>
@@ -49,15 +50,51 @@
   <ul>
     <li>Recipe: New York Ginger Sour</li>
     <div class="ingredients">
-    <li>2 ounces (60 milliliters) rye or bourbon whiskey</li>
-    <li>1 ounce (30 milliliters) Ginger Simple Syrup</li>
-    <li>¾ ounce (20 milliliters) fresh lemon juice</li>
-    <li>½ ounce (15 milliliters) dry, full-bodied red wine</li>
-</div>
+      <li>2 ounces (60 milliliters) rye or bourbon whiskey</li>
+      <li>1 ounce (30 milliliters) Ginger Simple Syrup</li>
+      <li>¾ ounce (20 milliliters) fresh lemon juice</li>
+      <li>½ ounce (15 milliliters) dry, full-bodied red wine</li>
+    </div>
   </ul>
-    <button class="pulse" href="https://www.kinfolk.com/the-blood-menu-new-york-ginger-sour/"target="_blank">full story here</button>
+<a href="https://www.kinfolk.com/the-blood-menu-new-york-ginger-sour/" target="_blank">
+<button class="pulse">full story here</button></a>
     <br></br>
     <img class="icon" src=images/wg-logo-nowords.png>
+  <ul class="shots"></ul>
 </article>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+<!-- <script src="jribbble.min.js"></script> -->
+<!-- <script src="jquery.min.js"></script> -->
+<script>
+$ curl "https://api.dribbble.com/v1/user?access_token=8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d"
+
+// var token = "8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d";
+var stuff = "shots/everyone"
+var request = "https://api.dribbble.com/" + stuff;
+
+$.get(request, function(result) {
+  var returnedObject = $("<div>").appendTo(result);
+  $(".shots").appendTo(returnedObject);
+});
+
+ // $.jribbble.shots('teams').then(function(shots) {
+ //
+ // var html = [];
+ //
+ //     shots.forEach(function(shot) {
+ //       html.push('<li class="shots--shot">');
+ //       html.push('<a href="' + shot.html_url + '">');
+ //       html.push('<img src="' + shot.images.normal + '">');
+ //       html.push('</a></li>');
+ //     });
+ //
+ //     $('.shots').html(html.join(''));
+ //   });
+</script>
+
+
 </body>
 </html>
