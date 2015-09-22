@@ -24,6 +24,20 @@ margin-top:250px;
   margin-top: 10px;
   color:white;
 }
+.search{
+  float:right;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: white;
+}
+#query{
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  line-height: 30px;
+  border: 1px solid white;
+
+}
 
 .fa-bookmark-o:before{
   padding-right: 12px;
