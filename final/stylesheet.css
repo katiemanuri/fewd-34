@@ -37,7 +37,14 @@ margin-top:250px;
   border: 1px solid white;
 
 }
-
+.intro{
+  color:#4b344b;
+  border-bottom: 4px solid #4b344b;
+  opacity: .5;
+  padding-bottom: 50px;
+  border-top: 4px solid #4b344b;
+  padding-top: 50px;
+}
 .fa-bookmark-o:before{
   padding-right: 12px;
 
