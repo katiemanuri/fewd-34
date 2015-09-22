@@ -26,7 +26,6 @@ margin-top:250px;
 }
 .search{
   float:right;
-  margin-right: 20px;
   margin-top: 10px;
   color: white;
 }
@@ -78,6 +77,8 @@ opacity:.6;
 }
 .post-title{
   text-align: center;
+  border-bottom: 1px solid #4b344b;
+  
 }
 .wine{
   margin-left: 35%;
