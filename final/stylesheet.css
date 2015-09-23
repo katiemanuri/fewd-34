@@ -169,10 +169,11 @@ animation-name: pulse;
 }
 
 footer{
+  padding-top: 90px;
   height:200px;
   background-color:#4b344b;
   color: white;
 }
 #contact-icons{
-  color: white !important!
+  color: white !important!;
 }
