@@ -1,10 +1,8 @@
 * {
   box-sizing: border-box;
-
 }
-
 header {
-    background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2015/01/sad-trees-1400x937.jpg');
+  background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2015/01/sad-trees-1400x937.jpg');
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,25 +10,33 @@ header {
   top: 0;
   left: 0;
   margin-bottom: 100px;
-  /*border-bottom: 7px solid #604345;*/
 }
+
+#shots{
+  position: relative;
+  margin-bottom: 300px;
+}
+
+.shots > li{
+  position: absolute;
+}
+
 .header{
-background-color: #4b344b;
-margin-top:250px;
+  background-color: #4b344b;
+  margin-top:250px;
 }
+
 .intro-icon{
   width:50px;
 }
-#nav{
-  float: left;
-  margin-left: 10px;
-  margin-top: 0px;
-  color:white;
-}
+
 .search{
   margin-top: 10px;
   color: white;
 }
+
+
+
 #query{
   background-color: transparent;
   border-radius: 5px;
@@ -39,8 +45,8 @@ margin-top:250px;
   border: 1px solid grey;
   width:200px;
   text-align: center;
-
 }
+
 .intro{
   color:white;
   border-bottom: 4px solid #4b344b;
@@ -50,22 +56,23 @@ margin-top:250px;
   padding-top: 50px;
   font-size: 25px;
   background-color: #4b344b;
-}
+  margin-bottom: 40px;
+  }
+
 .fa-bookmark-o:before{
   padding-right: 12px;
-
 }
 
 p {
-    opacity: .6;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    margin-left: 35%;
-    margin-right: 35%;
-    color: #4b344b;
-    text-align: center;
-
+  text-align: center;
+  margin:auto;
+  opacity: .6;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  width:500px;
+  color: #4b344b;
 }
+
 button {
   font: 14px 'Open Sans', sans-serif;
   border: 1px solid #4b344b ;
@@ -74,107 +81,167 @@ button {
   background: white;
   margin-bottom: 20px;
   margin-top: 20px;
-  }
-.logo {
-/*padding-top: 20px;*/
-margin-top: 0;
-text-align:center;
-width:200px;
-/*height:350px;*/
-opacity:.6;
-
 }
+
+.logo {
+  margin-top: 0;
+  text-align:center;
+  width:200px;
+  opacity:.6;
+}
+
+.jixel{
+  border-radius: 5%;
+  opacity:.6;
+  margin-top: 20px;
+}
+
 .icon{
   opacity: .6;
   width:30px;
 }
+
 .post-title{
   text-align: center;
   border-bottom: 1px solid #4b344b;
 }
+
 .post-info{
   margin:auto;
 }
-.wine{
-  margin-left: 35%;
-  margin-right: 35%;
+
+.judge{
+  color:#bf5446
 }
 
+
 body {
+  background-size:cover;
+  background-image:url("http://cdn.magdeleine.co/wp-content/uploads/2014/10/1f510c30-1400x933.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   /*font-family: 'Marvel' , sans-serif;*/
   font-size: 20px;
   /*line-height: 30px;*/
-  /*color: #604345;*/
+  color: #604345;
   margin:0;
   text-align: center;
 }
 
-}*/
 .arcs{
   text-align: center;
-  /*margin-left: 35%;
-  margin-right: 35%;*/
 }
+
 .featured{
   height: 550px;
 }
-/*.left-nav{
-  float: left;
-  overflow: auto;
-}*/
 
-
-.drinks{
-  height: 550px;
-}
-.ginger-sour{
-  margin-left: 35%;
-  margin-right: 35%;
-  text-align: center;
-}
-ul {list-style-type: none;
+ul {
+  list-style-type: none;
   text-align: left;
   margin-left: 33%;
 }
+
 li{
-  opacity: .6;
   color:#4b344b
 }
 
-.ingredients::before {
-    content: "\01F378";
-    padding-right: 5px;
-}
-button{
-  -webkit-animation-duration: 1s;
-animation-duration: 1s;
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
+#like{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: green;
+  margin-bottom: 50px;
+  border-color: white;
 }
 
-@-webkit-keyframes pulse {
-0% { -webkit-transform: scale(1); }
-50% { -webkit-transform: scale(1.1); }
-100% { -webkit-transform: scale(1); }
+#no{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  margin-right: 50px;
+  color:#bf5446;
+  opacity: .7;
+  margin-bottom: 50px;
+  border-color: white;
+  width: 70.6px;
 }
-@keyframes pulse {
-0% { transform: scale(1); }
-50% { transform: scale(1.1); }
-100% { transform: scale(1); }
+
+#no:hover{
+  border: 3px solid red;
 }
-.pulse:hover{
--webkit-animation-name: pulse;
-animation-name: pulse;
+
+.bounceOutLeft {
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft;
 }
+
+p.top{
+  border-bottom:2px solid grey;
+  width: 500px;
+  text-align: center;
+}
+
+.border-top{
+  border-top:2px solid grey;
+  width: 500px;
+  margin-bottom: 30px;
+  opacity:.5;
+}
+
+#r{
+  text-decoration: none;
+  color:#4b344b
+}
+
 
 footer{
-  padding-top: 90px;
+  padding-top: 80px;
   height:200px;
   background-color:#4b344b;
   color: white;
+  font-size:25px;
 }
-#contact-icons{
-  color: white !important!;
+
+.tinder{
+  margin:auto;
+  margin-top: 100px;
+  width:500px;
+  border-right: 3px solid grey;
+  border-bottom: 3px solid grey;
+  border:5px 5px 5px 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px 3px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+#like:hover{
+  border: 3px solid green;
+  border-radius: .5;
+}
+
+#like{
+  color: green;
+  opacity: .5;
+}
+
+.shots{
+  margin:auto;
+}
+
+.top{
+  font-size: 40px;
+  width: 375px;
+  text-align: center;
+}
+
+.fa-fire{
+  padding-top: none;
+  color:#bf5446
+}
+
+.contact-icons{
+  color:white;
+}
+
+.contact-icons:visited {
+  color: white;
 }

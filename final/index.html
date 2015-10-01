@@ -2,114 +2,173 @@
 <html>
 
 <!-- <link href='http://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'> -->
-  <head>
+<head>
     <meta charset="utf-8">
     <title>w&g</title>
     <link rel="stylesheet" href="stylesheet.css" media="screen">
-<link rel="shortcut icon" src="/images/wg.ico" type="image/x-icon" />
+    <link rel="shortcut icon" src="/images/wg.ico" type="image/x-icon" />
   <!--font awesome stylesheet  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Animate.css -->
+    <link rel="stylesheet" href="animate.css">
+</head>
 
-  </head>
-
-<header>
+<!-- <header>
      <img class="logo" src=images/logo.png>
-<div class="nav">
-  <!-- <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul> -->
-<i id="nav" class="fa fa-bars fa-2x"></i></div>
-
-<div class="header"><img src=images/header.png></div>
+     <div class="header"><img src=images/header.png></div>
 </header>
-<body>
 
-  <div class="intro"><img class="intro-icon" src=images/wg-logo-nowords.png><br></br>welcome to warmth<strong> &</strong> grain<br></br> photography | videography | music | lifestyle blog<br></br>enjoy exploring<br></br><div class="search">
-    <i class="fa fa-search fa-2x"></i>
-    <form><input type="text" id="query" placeholder="search for inspiration"></form>
-  </div>
+<body>
+    <div class="intro"><img class="intro-icon" src=images/wg-logo-nowords.png><br></br>warmth<strong> &</strong> grain<br></br><i class="fa fa-fire"></i>  jixel | photography | video | music | lifestyle<br></br><div class="search">
+    <!-- <i class="fa fa-search fa-2x"></i> -->
+    <!-- <form id="sdribbble"><input type="text" id="query" placeholder="search for inspiration"></form> -->
+    <!-- </div>
+  </div> -->
+
+<div class="tinder">
+  <img class="jixel" src=images/jixel.png>
+  <p class="judge"><strong>judge some pixels</strong>
+  </p>
+  <p class="top"><i class="fa fa-fire fa-3x"></i>
+  </p>
+<div class"border-bottom"></div>
+  <br></br>
+<div id=shots><ul id="list" class=shots></ul></div>
+  <br></br>
+<div class="border-top"></div><button id="no" onclick="document.getElementById('myTune').play()" ><i class="fa fa-times fa-4x"></i></button>
+
+  <button id="like"><i id="yes"class="fa fa-heart fa-4x"></i></button>
 </div>
-<article class="post">
-<ul class="shots"></ul>
-<p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>
-good food gathers great people</p>
+
+  <br></br>
+
+<!-- view your favorites- redirect to new page -->
+
+  <!-- <a id="r" href="favorites.html"><div class"rights">view your <i id="yes"class="fa fa-heart fa-2x"></i>'s</div>
+  </a>
+<ol id=favShots></ol>
+  <br></br>
+
+<!-- blog starts -->
+
+<!-- <article class="post">
+    <p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>
+      good food gathers great people</p>
     <p class="post-info"><iframe src="https://player.vimeo.com/video/47559223?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/47559223">raspberry tart</a> from <i class="fa fa-vimeo"></i><a href="https://vimeo.com/mrwalker">tiger in a jar</a></p>
-    <div class="post">
+  <div class="post">
       <br></br>
-      <img class="icon" src=images/wg-logo-nowords.png>
-<p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>featured product</p>
+    <img class="icon" src=images/wg-logo-nowords.png>
+    <p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>featured product</p>
     <img class="featured" src="http://cdn.shopify.com/s/files/1/0164/4368/products/be_wine_loose_tee_1024x1024.jpg?v=1414594602">
     <p class = "wine">Life, a shirt imploring its viewer to "be wine". If only we could magically transform humans into alcohol.</p>
     <a href="http://stayhomeclub.com/collections/women/products/be-wine-loose-tee"><button target="_blank" class="pulse">buy me here</button></a>
     <br></br>
     <img class="icon" src=images/wg-logo-nowords.png>
-<p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>be inspired by kinfolk</p>
+    <p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>be inspired by kinfolk</p><br></br>
     <iframe src="https://player.vimeo.com/video/32302790?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/32302790">holiday gathering</a> from <i class="fa fa-vimeo"></i><a href="https://vimeo.com/mrwalker">tiger in a jar</a></p>
     <br></br>
-    <img class="icon" src=images/wg-logo-nowords.png>
-<p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>featured Artist</p>
-<iframe src="https://player.vimeo.com/video/139601423" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/139601423">The Arcs - Outta My Mind</a> from<i class="fa fa-vimeo"></i><a href="https://vimeo.com">Vimeo</a></p>
-    <br></br>
-    <p class="arcs">Yours, Dreamily, is the debut album by The Arcs, a side-project by Dan Auerbach of The Black Keys. The album originated as an Auerbach solo project but morphed into a collaborative effort, with musicians Leon Michels, Richard Swift, Homer Steinweiss, and Nick Movshon. All members of the band share songwriting credit for the album.</p>
-    <br></br>
-    <img class="icon" src=images/wg-logo-nowords.png>
-<p class="post-title"><i class="fa fa-bookmark-o fa-2x"></i>get your drink on</p>
-    <br></br>
-    <img class="drinks" src="https://www.kinfolk.com/wp-content/uploads/2015/08/Kinfolk_Vol17_TheBloodMenu-3.jpg">
-    <p class="ginger-sour">This crimson-hued cocktail mixes some of our favorite flavors: wine, whiskey and ginger, with a bright splash of lemon. Bloody good.
-  <ul>
-    <li>Recipe: New York Ginger Sour</li>
-    <div class="ingredients">
-      <li>2 ounces (60 milliliters) rye or bourbon whiskey</li>
-      <li>1 ounce (30 milliliters) Ginger Simple Syrup</li>
-      <li>¾ ounce (20 milliliters) fresh lemon juice</li>
-      <li>½ ounce (15 milliliters) dry, full-bodied red wine</li>
-    </div>
-  </ul>
-<a href="https://www.kinfolk.com/the-blood-menu-new-york-ginger-sour/" target="_blank">
-<button class="pulse">full story here</button></a>
-    <br></br>
-    <img class="icon" src=images/wg-logo-nowords.png>
-  <ul class="shots"></ul>
-</article>
-</body>
+</article> -->
+</body> -->
+<!--
+<footer id="contact">Contact us
+  <div class='contact-icons'>
+  <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i>
+  </a>
+  <a href="http://www.dribbble.com" target="_blank"><i class="fa fa-dribbble"></i>
+  </a>
+  <a href="mailto:kathrynmanuri@gmail.com?Subject=Hello%20there" target="_top"><i class="fa fa-envelope-o"></i>
+  </a>
+  </div>
+</footer> -->
 
-<footer id="contact-icons">
-  Contact us<i class="fa fa-instagram-fa-2x"></i><i class="fa fa-dribbble-fa-2x"></i><i class="fa fa-envelope-o-fa-2x"></i>
-</footer>
+<!-- my audio source -->
+<audio id="myTune">
+  <source src="images/ByeFelicia.mp3">
+</audio>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- begin script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="jribbble.min.js"></script>
+
+<script>
+// authenticate my dribbble API token
+$.jribbble.setToken('8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d');
+
+// get shots from Dribbble API
+// took the variable out of the function to make it global (can access it from anywher in my code)
+var html = [];
+
+function getDribbles() {
+        $.jribbble.shots().then(function(shots)
+    {
+// forEach shot create an li, add a class, add the anchor tag and assign the href
+shots.forEach(function(shot) {
+        html.push('<li id="image" class="shots--shot animated">');
+        html.push('<a href="' + shot.html_url + '">');
+        html.push('<img src="' + shot.images.normal + '">');
+        html.push('</a></li>');
+
+  });
+
+  $('.shots').html(html.join(''));
+
+  });
+};
+getDribbles();
+
+// ***new array of likes
+// var likeList = [];
+//
+// function addToLike () {
+//     var addLike = document.getElementById('image').value;
+//     likeList.push(addLike);
 
 
-<!-- <script src="jribbble.min.js"></script> -->
-<!-- <script src="jquery.min.js"></script> -->
-<!-- <script> -->
-<!-- $ "https://api.dribbble.com/v1/user?access_token=8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d"
 
-// var token = "8b542ea56d12bd175245fdbf0fa936b27a5357e5a6aae92184c95fb14ed6091d";
-var stuff = "shots/everyone"
-var request = "https://api.dribbble.com/" + stuff;
+// ***** try to create a variable that holds the last item ******
+// if ($(".shots--shot").last).hasClass("fadeOutLeft") || $(".shots--shot):last").hasClass("fadeOutRight")) {
+// // do something here to indcate that all items in the array have a swiped label:
+//   getDribbles();
+// } else {
+//   var lastItem = $(".shots--shot):last");
+//
+// }
 
-$.get(request, function(result) {
-  var returnedObject = $("<div>").appendTo(result);
-  $(".shots").appendTo(returnedObject);
-}); -->
+// swipe left when I click the no button only to the last item in the list
+document.querySelector("#no").addEventListener("click", function(e) {
+  $(".shots--shot:not(.fadeOutLeft):last").addClass('fadeOutLeft');
 
- <!-- // $.jribbble.shots('teams').then(function(shots) {
- //
- // var html = [];
- //
- //     shots.forEach(function(shot) {
- //       html.push('<li class="shots--shot">');
- //       html.push('<a href="' + shot.html_url + '">');
- //       html.push('<img src="' + shot.images.normal + '">');
- //       html.push('</a></li>');
- //     });
- //
- //     $('.shots').html(html.join(''));
- //   });
-<!-- </script> -->
+});
+// swipe right when I click the yes button only to the last item in the list
+document.querySelector("#like").addEventListener("click", function(e) {
+  $(".shots--shot:not(.fadeOutRight):last").addClass('fadeOutRight');
+});
+//
+// // get favorites from local storage or empty array
+// var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+// // add class 'fav' to each favorite
+// favorites.forEach(function(favorite) {
+//   document.getElementById(favorite).className = 'fav';
+// });
+// // register click event listener
+// document.querySelector('#favShots').addEventListener('click', function(e) {
+//   var id = e.target.id,
+//       item = e.target,
+//       index = favorites.indexOf(id);
+//   // return if target doesn't have an id (shouldn't happen)
+//   if (!id) return;
+//   // item is not favorite
+//   if (index == -1) {
+//     favorites.push(id);
+//     item.className = 'fav';
+//   // item is already favorite
+//   } else {
+//     favorites.splice(index, 1);
+//     item.className = '';
+//   }
+//   // store array in local storage
+//   localStorage.setItem('favorites', JSON.stringify(favorites));
+// });
 
+</script>
 </html>
