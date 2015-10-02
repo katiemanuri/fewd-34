@@ -117,7 +117,8 @@ button {
 
 body {
   background-size:cover;
-  background-image:url("http://cdn.magdeleine.co/wp-content/uploads/2014/10/1f510c30-1400x933.jpeg");
+  /*background-color: white;*/
+  /*background-image:url("http://cdn.magdeleine.co/wp-content/uploads/2014/10/1f510c30-1400x933.jpeg");*/
   background-repeat: no-repeat;
   background-position: center;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -130,9 +131,6 @@ body {
   text-align: center;
 }
 
-.arcs{
-  text-align: center;
-}
 
 .featured{
   height: 550px;
