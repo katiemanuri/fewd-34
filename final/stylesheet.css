@@ -200,6 +200,7 @@ footer{
 }
 
 .tinder{
+  cursor: grab;
   margin:auto;
   margin-top: 100px;
   width:500px;
