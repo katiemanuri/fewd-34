@@ -200,7 +200,6 @@ footer{
 }
 
 .tinder{
-  cursor: grab;
   margin:auto;
   margin-top: 100px;
   width:500px;
@@ -210,6 +209,7 @@ footer{
   border-radius: 10px;
   box-shadow: 7px 7px 7px 3px rgba(0, 0, 0, 0.5);
   background-color: white;
+  cursor: move;
 }
 
 #like:hover{
